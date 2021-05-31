@@ -4,7 +4,7 @@ ARG APPJAR=target/*.jar
 COPY ${APPJAR} app.jar
 RUN jar -xf ./app.jar
 
-# comment
+# comment 1
 FROM openjdk:8-jre-alpine
 VOLUME /tmp
 ARG DEPENDENCY=target/dependency
